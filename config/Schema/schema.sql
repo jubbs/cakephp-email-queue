@@ -18,6 +18,10 @@ CREATE TABLE IF NOT EXISTS `email_queue` (
   `send_at` datetime DEFAULT NULL,
   `created` datetime NOT NULL,
   `modified` datetime DEFAULT NULL,
-  `attachments` text,
+  `attachments` text DEFAULT NULL,
+  `status_id` VARCHAR(100) DEFAULT NULL,
+  `status` VARCHAR(100) DEFAULT NULL,
+  `status_message` text DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

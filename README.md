@@ -71,6 +71,7 @@ and queue a new one by storing the correct data:
  * `config`: the name of the email config to be used for sending
  * `from_name`: String with from name. Must be supplied together with `from_email`.
  * `from_email`: String with from email. Must be supplied together with `from_name`.
+ * `tracked`: If used with a service that tracks emails then and you want to track email status then set to true. Default is false. Currently 2024 works with the SendGrid Service and sprintcube/cakephp-sendgrid plugin.
 
 ### Previewing emails
 
